@@ -1,6 +1,7 @@
 import React from "react";
 import startsidaImg from "../bilder/startsida.jpg";
 import { Link } from "react-router-dom";
+import LikeButton from "../components/LikeButton";
 
 
 class Home extends React.Component {
@@ -33,6 +34,11 @@ class Home extends React.Component {
 			  <p>Telefon: 012-345 6789</p>
 			  <Link to="/frageformular">Frågeformulär</Link>
 			</section>
+			{/* 🆕 Like-knappen */}
+			<section className="section">
+            <h2>Gillar du vår sida?</h2>
+            <LikeButton label="Gilla sidan!" color="#c9beb7" />
+          </section>
 		  </div>
 		</main>
 	  );
