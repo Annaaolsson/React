@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen] = useState(false);
 
   return (
     <header>
@@ -12,14 +12,14 @@ const Header = () => {
       
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
-          <li><Link to="/aretsalmebodabo">Årets Älmebodabo</Link></li>
-          <li><Link to="/upplev">Upplev</Link></li>
-          <li><Link to="/levaochbo">Leva & bo</Link></li>
-          <li><Link to="/handelser">Händelser</Link></li>
+          <li><NavLink to="/aretsalmebodabo">Årets Älmebodabo</NavLink></li>
+          <li><NavLink to="/upplev">Upplev</NavLink></li>
+          <li><NavLink to="/levaochbo">Leva & bo</NavLink></li>
+          <li><NavLink to="/handelser">Händelser</NavLink></li>
         </ul>
       </nav>
 
-      <button id="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+      <button id="menu-toggle">☰</button>
     </header>
   );
 };

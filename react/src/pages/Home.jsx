@@ -1,5 +1,6 @@
 import React from "react";
 import startsidaImg from "../bilder/startsida.jpg";
+import { Link } from "react-router-dom";
 
 
 class Home extends React.Component {
@@ -30,6 +31,7 @@ class Home extends React.Component {
 			  <p>Drivs av Älmeboda Sockenkommitté.</p>
 			  <p>info@almeboda.nu</p>
 			  <p>Telefon: 012-345 6789</p>
+			  <Link to="/frageformular">Frågeformulär</Link>
 			</section>
 		  </div>
 		</main>

@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Home from "./pages/Home";
+import Frageformular from "./pages/Frageformular";
 import Aretsalmebodabo from "./pages/Aretsalmebodabo";
 import Upplev from "./pages/Upplev";
 import Levaochbo from "./pages/Levaochbo";
@@ -18,6 +19,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />}/>
+				<Route path="/frageformular" element={<Frageformular />}/>
 				<Route path="/aretsalmebodabo" element={<Aretsalmebodabo />}/>
 				<Route path="/upplev" element={<Upplev />}/>
 				<Route path="/levaochbo" element={<Levaochbo />}/>
